@@ -1,0 +1,6 @@
+{
+  "name": "AuraGym AI",
+  "description": "An Intelligent Mirror for real-time fitness form correction, household object exercise calibration, and virtual arena social workouts.",
+  "requestFramePermissions": ["camera", "microphone", "geolocation"],
+  "majorCapabilities": []
+}

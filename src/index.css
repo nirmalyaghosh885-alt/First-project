@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Professional Polish Palette */
+  --color-bg: #09090B;
+  --color-surface: #18181B;
+  --color-surface-bright: #27272A;
+  --color-accent: #D9FF00;
+  --color-error: #FF4B4B;
+  --color-text-main: #FAFAFA;
+  --color-text-dim: #A1A1AA;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-text-main font-sans antialiased;
+  }
+}
+
+/* Reusable Professional Polish Patterns */
+.polish-card {
+  @apply bg-surface border border-surface-bright rounded-[16px];
+}
+
+.polish-glass {
+  @apply bg-surface/80 backdrop-blur-[12px] border-b border-surface-bright;
+}
+
+.stat-label {
+  @apply text-[10px] uppercase text-text-dim tracking-wider font-semibold;
+}
+
+.stat-value {
+  @apply font-mono text-[18px] font-semibold;
+}
+
+.logo-pill {
+  @apply bg-accent text-black px-3 py-1 rounded-[4px] font-extrabold text-[14px] tracking-tighter;
+}
+
+.form-status-pill {
+  @apply bg-accent/15 border border-accent text-accent px-4 py-2 rounded-full font-bold text-xs uppercase tracking-widest flex items-center gap-2;
+}
+
